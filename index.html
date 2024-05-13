@@ -3916,8 +3916,8 @@ officesData.forEach(office => {
     row.innerHTML = `
     <td>${office.name}</td>
     <td>${office.doc_count}</td>
-    <td><img src="${office.image_url}" alt="${office.name}" style="max-width: 100px; max-height: 100px;"></td>
-    <td><a href="${office.url}" target="_blank">Visit Office</a></td>
+    <td class="image"><img src="${office.image_url}" alt="${office.name}" style="max-width: 100px; max-height: 100px;"></td>
+    <td class="link"><a href="${office.url}" target="_blank">Visit Office</a></td>
     `;
     tableBody.appendChild(row);
 });
